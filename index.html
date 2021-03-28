@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="login.js"></script>
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
@@ -42,7 +41,7 @@ body {
 
 body h1 {
     color: #212121;
-    font-size: 6rem;
+    font-size: 8rem;
     font-family: 'Josefin Sans', sans-serif;
     position: absolute;
     top: 20%;
@@ -52,9 +51,6 @@ body h1 {
     animation-duration: 5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-iteration-count: infinite;
-
-
-
 }
 @keyframes heading{
     0%{opacity: .7;}
@@ -70,12 +66,12 @@ button:focus {
 
 .allbox {
 
-    width: 20rem;
-    height: 3rem;
+    width: 25rem;
+    height: 4rem;
     position: absolute;
     top: 5%;
     right: 10%;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     font-size: 1.5rem;
     text-align: center;
     background-color: transparent;
@@ -113,7 +109,7 @@ button:focus {
     position: absolute;
     top: 75%;
     right: 16%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -135,8 +131,6 @@ label {
     position: absolute;
     top: 55%;
     left: 9%;
-    
-    
 }
 
 #git{
@@ -152,8 +146,8 @@ label {
 
 .allbox:hover {
     border: 2px solid #fff;
-    width: 23rem;
-    height: 3rem;
+    width: 27rem;
+    height: 5rem;
     position: relative;
     right: 9%;
     transition: .1s;
@@ -163,8 +157,8 @@ label {
 }
 .allbox:focus {
     border: 2px solid #000;
-    width: 23rem;
-    height: 3rem;
+    width: 27rem;
+    height: 5rem;
     position: relative;
     right: 9%;
     transition: .1s;
@@ -208,516 +202,20 @@ a{
 a:hover{
     color: #1E88E5;
 }
-
-@media screen and (min-width: 1900px){
-    body h1{
+@media screen and (max-width:767px){
+    body h1 {
+        font-size: 4rem;
         position: absolute;
-        top: 18%;
-        left: 8%;
-        font-size: 8rem;
-    }
-    label {
-        font-size: 5rem; 
-    }
-    .allbox {
-        width: 35rem;
-        height: 6rem;
-        position: absolute;
-        right: 8%;
-        border-radius: 3rem;
-        font-size: 1.5rem;
+        top: 5%;
+        left: 15%;
         text-align: center;
-        background-color: transparent;
-        border: 3px solid #212121;
-        color: #212121;
-        transition-duration: 0.25s;
-    }
-    .allbox:hover {
-        
-        width: 36rem;
-        height: 6rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-    }
-    .allbox:focus {
-        border: 2px solid #000;
-        width: 36rem;
-        height: 6rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-        
-    
-    }
-    ::placeholder{
-        font-size: 2.5rem;
-    }
-    #passone{
-        position: absolute;
-        top: 47.3%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px;
-        
-    }
-    #passtwo{
-        position: absolute;
-        top: 62%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px; 
-    }
-    #submit {
-        position: absolute;
-        top: 75%;
-        right: 15%;
-        font-size: 2.5rem;
-        padding: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: none;
-        border-radius: 3rem;
-
-    }
-
-}
-
-@media screen and (min-width: 1680px) and (max-width:1900px){
-    body h1{
-        position: absolute;
-        top: 15%;
-        left: 8%;
-        font-size: 6rem;
-    }
-    label {
-        font-size: 3rem; 
-    }
-    .allbox {
-        width: 35rem;
-        height: 6rem;
-        position: absolute;
-        right: 8%;
-        border-radius: 3rem;
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: transparent;
-        border: 3px solid #212121;
-        color: #212121;
-        transition-duration: 0.25s;
-    }
-    .allbox:hover {
-        
-        width: 36rem;
-        height: 6rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-    }
-    .allbox:focus {
-        border: 2px solid #000;
-        width: 36rem;
-        height: 6rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-        
-    
-    }
-    ::placeholder{
-        font-size: 2.5rem;
-    }
-    #passone{
-        position: absolute;
-        top: 47.3%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px;
-        
-    }
-    #passtwo{
-        position: absolute;
-        top: 62%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px; 
-    }
-    #submit {
-        position: absolute;
-        top: 75%;
-        right: 15%;
-        font-size: 2.5rem;
-        padding: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: none;
-        border-radius: 3rem;
-
-    }
-
-}
-
-@media screen and (min-width: 1600px) and (max-width:1680px){
-    body h1{
-        position: absolute;
-        top: 15%;
-        left: 8%;
-        font-size: 6rem;
-    }
-    label {
-        font-size: 3rem; 
-    }
-    .allbox {
-        width: 30rem;
-        height: 5rem;
-        position: absolute;
-        right: 8%;
-        border-radius: 3rem;
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: transparent;
-        border: 3px solid #212121;
-        color: #212121;
-        transition-duration: 0.25s;
-    }
-    .allbox:hover {
-        
-        width: 32rem;
-        height: 6rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-    }
-    .allbox:focus {
-        border: 2px solid #000;
-        width: 32rem;
-        height: 6rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-        
-    
-    }
-    ::placeholder{
-        font-size: 2.5rem;
-    }
-    #passone{
-        position: absolute;
-        top: 47.3%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px;
-        
-    }
-    #passtwo{
-        position: absolute;
-        top: 62%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px; 
-    }
-    #submit {
-        position: absolute;
-        top: 75%;
-        right: 16.5%;
-        font-size: 2.5rem;
-        padding: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: none;
-        border-radius: 3rem;
-
-    }
-
-}
-
-
-@media screen and (min-width: 1440px) and (max-width:1600px){
-    body h1{
-        position: absolute;
-        top: 15%;
-        left: 6%;
-        font-size: 6rem;
-    }
-    label {
-        font-size: 3rem; 
-        position: absolute;
-        top: 55%;
-        left: 7%;
-        
-    }
-    #link{
-        position: absolute;
-        left: 7%;
     }
     .allbox {
         width: 25rem;
         height: 4rem;
         position: absolute;
-        right: 8%;
-        border-radius: 3rem;
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: transparent;
-        border: 3px solid #212121;
-        color: #212121;
-        transition-duration: 0.25s;
-    }
-    .allbox:hover {
-        
-        width: 27rem;
-        height: 5rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-    }
-    .allbox:focus {
-        border: 2px solid #000;
-        width: 27rem;
-        height: 5rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-        
-    
-    }
-    ::placeholder{
-        font-size: 2rem;
-    }
-    #passone{
-        position: absolute;
-        top: 47.3%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px;
-        
-    }
-    #passtwo{
-        position: absolute;
-        top: 62%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px; 
-    }
-    #submit {
-        position: absolute;
-        top: 75%;
-        right: 15%;
-        font-size: 2.5rem;
-        padding: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: none;
-        border-radius: 3rem;
-
-    }
-
-}
-@media screen and (min-width: 1360px) and (max-width:1440px){
-    body h1{
-        position: absolute;
-        top: 15%;
-        left: 6%;
-        font-size: 5rem;
-    }
-    label {
-        font-size: 3rem; 
-        position: absolute;
-        top: 55%;
-        left: 7%;
-        
-    }
-    #link{
-        position: absolute;
-        left: 7%;
-    }
-    .allbox {
-        width: 25rem;
-        height: 4rem;
-        position: absolute;
-        right: 8%;
-        border-radius: 3rem;
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: transparent;
-        border: 3px solid #212121;
-        color: #212121;
-        transition-duration: 0.25s;
-    }
-    .allbox:hover {
-        
-        width: 27rem;
-        height: 5rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-    }
-    .allbox:focus {
-        border: 2px solid #000;
-        width: 27rem;
-        height: 5rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-        
-    
-    }
-    ::placeholder{
-        font-size: 2rem;
-    }
-    #passone{
-        position: absolute;
-        top: 47.3%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px;
-        
-    }
-    #passtwo{
-        position: absolute;
-        top: 62%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px; 
-    }
-    #submit {
-        position: absolute;
-        top: 75%;
-        right: 15%;
-        font-size: 2.5rem;
-        padding: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: none;
-        border-radius: 3rem;
-
-    }
-}
-
-@media screen and (min-width: 1280px) and (max-width:1360px){
-    body h1{
-        position: absolute;
-        top: 15%;
-        left: 6%;
-        font-size: 5rem;
-    }
-    label {
-        font-size: 3rem; 
-        position: absolute;
-        top: 55%;
-        left: 7%;
-        
-    }
-    #link{
-        position: absolute;
-        left: 7%;
-    }
-    .allbox {
-        width: 25rem;
-        height: 4rem;
-        position: absolute;
-        right: 8%;
-        border-radius: 3rem;
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: transparent;
-        border: 3px solid #212121;
-        color: #212121;
-        transition-duration: 0.25s;
-    }
-    .allbox:hover {
-        
-        width: 27rem;
-        height: 5rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-    }
-    .allbox:focus {
-        border: 2px solid #000;
-        width: 27rem;
-        height: 5rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-        
-    
-    }
-    ::placeholder{
-        font-size: 2rem;
-    }
-    #passone{
-        position: absolute;
-        top: 47.3%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px;
-        
-    }
-    #passtwo{
-        position: absolute;
-        top: 62%;
-        right: 9.5%;
-        width: 40px;
-        height: 40px; 
-    }
-    #submit {
-        position: absolute;
-        top: 75%;
-        right: 15%;
-        font-size: 2.5rem;
-        padding: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: none;
-        border-radius: 3rem;
-
-    }
-}
-
-@media screen and (min-width: 900px) and (max-width:1360px){
-    body h1{
-        position: absolute;
-        top: 8%;
-        left: 12%;
-        font-size: 5rem;
-        text-align: center;
-    }
-    label {
-        font-size: 3rem; 
-        position: absolute;
-        top: 65%;
-        left: 28%;
-        
-    }
-    #link{
-        position: absolute;
-        top: 73%;
-        left: 27%;
-    }
-    #uname{
-        position: absolute;
-        top: 25%;
-    }
-    #mail{
-        position: absolute;
-        top: 33%;
-    }
-    #pass{
-        position: absolute;
-        top: 41%;
-    }
-    #repass{
-        position: absolute;
-        top: 49%;
-    }
-    .allbox {
-
-        width: 30rem;
-        height: 4rem;
-        position: absolute;
-        right: 25%;
-        top: 30%;
+        top: 5%;
+        right: 22%;
         border-radius: 2rem;
         font-size: 1.5rem;
         text-align: center;
@@ -725,59 +223,572 @@ a:hover{
         border: 2px solid #212121;
         color: #212121;
         transition-duration: 0.25s;
-        
     }
-    .allbox:hover {
-        
-        width: 27rem;
-        height: 5rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
+    #uname{
+        position: absolute;
+        top: 22%;
     }
-    .allbox:focus {
-        border: 2px solid #000;
-        width: 27rem;
-        height: 5rem;
-        position: relative;
-        right: 8%;
-        border-radius: 3rem;
-        
-    
+    #mail{
+        position: absolute;
+        top: 32%;
     }
-    ::placeholder{
+    #pass{
+        position: absolute;
+        top: 42%;
+    }
+    #repass{
+        position: absolute;
+        top: 52%;
+    }
+    #submit {
+        position: absolute;
+        top: 62%;
+        right: 36%;
         font-size: 2rem;
+        padding: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: none;
+        border-radius: 2rem;
+        transition-duration: 0.5s;
+        background-color: #212121;
+        color: #fff;
+    }
+    label {
+        position: absolute;
+        top: 73%;
+        left: 15%;
+    }
+    #link{
+        position: absolute;
+        top: 80%;
+        left: 13%;
     }
     #passone{
         position: absolute;
-        top: 42%;
-        right: 27.5%;
-        width: 40px;
-        height: 40px;
+        top: 44.3%;
+        right: 25%;
+        width: 25px;
+        height: 25px;
         
     }
     #passtwo{
         position: absolute;
-        top: 50%;
-        right: 27.5%;
-        width: 40px;
-        height: 40px; 
+        top: 54%;
+        right: 25%;
+        width: 25px;
+        height: 25px;  
+    }
+
+
+}
+
+@media screen and (min-width:768px)and (max-width:1023px){
+    body h1 {
+        font-size: 4rem;
+        position: absolute;
+        top: 5%;
+        left: 21%;
+        text-align: center;
+    }
+    .allbox {
+        width: 25rem;
+        height: 4rem;
+        position: absolute;
+        top: 5%;
+        right: 30%;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid #212121;
+        color: #212121;
+        transition-duration: 0.25s;
+    }
+    #uname{
+        position: absolute;
+        top: 22%;
+    }
+    #mail{
+        position: absolute;
+        top: 32%;
+    }
+    #pass{
+        position: absolute;
+        top: 42%;
+    }
+    #repass{
+        position: absolute;
+        top: 52%;
     }
     #submit {
         position: absolute;
-        top: 57%;
-        left: 43%;
+        top: 62%;
+        right: 42%;
         font-size: 2rem;
-        padding: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         border: none;
-        border-radius: 3rem;
+        border-radius: 2rem;
+        transition-duration: 0.5s;
+        background-color: #212121;
+        color: #fff;
+    }
+    label {
+        position: absolute;
+        top: 73%;
+        left: 22%;
+    }
+    #link{
+        position: absolute;
+        top: 80%;
+        left: 20%;
+    }
+    #passone{
+        position: absolute;
+        top: 44.3%;
+        right: 32%;
+        width: 25px;
+        height: 25px;
+        
+    }
+    #passtwo{
+        position: absolute;
+        top: 54%;
+        right: 32%;
+        width: 25px;
+        height: 25px;  
+    }
 
+
+}
+
+@media screen and (min-width:1024px)and (max-width:1500px){
+    body h1 {
+        font-size: 4rem;
+        position: absolute;
+        top: 15%;
+        left: 8%;
+        text-align: center;
     }
 }
+
+
+@media screen and (min-width:1024px)and (max-width:1800px){
+    body h1 {
+        font-size: 6rem;
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        text-align: center;
+    }
+}
+
+
+
+
+
     </style>
+    <script type="text/javascript">
+    function myFunctionx() {
+    var x = document.getElementById("pass")
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+  function myFunctiony() {
+    var y = document.getElementById("repass")
+    if (y.type === "password") {
+      y.type = "text";
+    } else {
+      y.type = "password";
+    }
+  }
+  
+
+
+
+function validate(){
+    uname=document.getElementById("uname").value;
+    var regx=/^([a-z 0-9]{5,15})$/;
+    var unamevar=  regx;
     
+
+    mail=document.getElementById("mail").value;
+    var regx=/^([a-z 0-9 .]{3,15})@([a-z 0-9]{3,15}).([a-z]{1,10})([. a-z]{1,10})$/;
+    var mailvar=regx;
+
+    pass=document.getElementById("pass").value;
+    
+    var regx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+    var passvar=regx;
+    
+    repass=document.getElementById("repass").value;
+
+    
+    
+
+    if(unamevar.test(uname) && mailvar.test(mail) && passvar.test(pass) &&(repass==pass)) {
+        return true;
+    }
+
+    else{
+        if((uname.length==0) && (mail.length==0)&&(pass.length==0)&&(repass.length==0)){
+
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+
+            
+            document.getElementById("one")
+            .style.visibility="visible"
+            
+            document.getElementById("two")
+            .style.visibility="hidden"
+
+            document.getElementById("three")
+            .style.visibility="hidden"
+
+            document.getElementById("four")
+            .style.visibility="hidden"
+
+            document.getElementById("five")
+            .style.visibility="hidden"
+
+            document.getElementById("six")
+            .style.visibility="hidden"
+
+            document.getElementById("seven")
+            .style.visibility="hidden"
+
+            document.getElementById("eight")
+            .style.visibility="hidden"
+
+            document.getElementById("nine")
+            .style.visibility="hidden"
+        }
+        else if (uname.length==0){
+
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+   
+            document.getElementById("uname")
+            .style.border= "2px solid #03A9F4"
+
+            document.getElementById("one")
+            .style.visibility="hidden"
+            
+            document.getElementById("two")
+            .style.visibility="visible"
+
+            document.getElementById("three")
+            .style.visibility="hidden"
+
+            document.getElementById("four")
+            .style.visibility="hidden"
+
+            document.getElementById("five")
+            .style.visibility="hidden"
+
+            document.getElementById("six")
+            .style.visibility="hidden"
+
+            document.getElementById("seven")
+            .style.visibility="hidden"
+
+            document.getElementById("eight")
+            .style.visibility="hidden"
+
+            document.getElementById("nine")
+            .style.visibility="hidden"
+
+
+        }
+        else if (uname.length<5){
+
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+
+    
+            document.getElementById("uname")
+            .style.border= "2px solid #FF3D00"
+
+            document.getElementById("one")
+            .style.visibility="hidden"
+            
+            document.getElementById("two")
+            .style.visibility="hidden"
+
+            document.getElementById("three")
+            .style.visibility="visible"
+
+            document.getElementById("four")
+            .style.visibility="hidden"
+
+            document.getElementById("five")
+            .style.visibility="hidden"
+
+            document.getElementById("six")
+            .style.visibility="hidden"
+
+            document.getElementById("seven")
+            .style.visibility="hidden"
+
+            document.getElementById("eight")
+            .style.visibility="hidden"
+
+            document.getElementById("nine")
+            .style.visibility="hidden"
+        }
+        
+        else if (uname.length>15){
+
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+ 
+            document.getElementById("uname")
+            .style.border= "2px solid #FF3D00"
+
+            document.getElementById("one")
+            .style.visibility="hidden"
+            
+            document.getElementById("two")
+            .style.visibility="hidden"
+
+            document.getElementById("three")
+            .style.visibility="hidden"
+
+            document.getElementById("four")
+            .style.visibility="visible"
+
+            document.getElementById("five")
+            .style.visibility="hidden"
+
+            document.getElementById("six")
+            .style.visibility="hidden"
+
+            document.getElementById("seven")
+            .style.visibility="hidden"
+
+            document.getElementById("eight")
+            .style.visibility="hidden"
+
+            document.getElementById("nine")
+            .style.visibility="hidden"
+        }
+        else if (mail.length==0){
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+   
+            document.getElementById("mail")
+            .style.border= "2px solid #FF3D00"
+
+            document.getElementById("one")
+            .style.visibility="hidden"
+            
+            document.getElementById("two")
+            .style.visibility="hidden"
+
+            document.getElementById("three")
+            .style.visibility="hidden"
+
+            document.getElementById("four")
+            .style.visibility="hidden"
+
+            document.getElementById("five")
+            .style.visibility="visible"
+
+            document.getElementById("six")
+            .style.visibility="hidden"
+
+            document.getElementById("seven")
+            .style.visibility="hidden"
+
+            document.getElementById("eight")
+            .style.visibility="hidden"
+
+            document.getElementById("nine")
+            .style.visibility="hidden"
+        }
+
+        else if (pass.length==0){
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+            
+            document.getElementById("pass")
+            .style.border= "2px solid #FF3D00"
+
+            document.getElementById("one")
+            .style.visibility="hidden"
+            
+            document.getElementById("two")
+            .style.visibility="hidden"
+
+            document.getElementById("three")
+            .style.visibility="hidden"
+
+            document.getElementById("four")
+            .style.visibility="hidden"
+
+            document.getElementById("five")
+            .style.visibility="hidden"
+
+            document.getElementById("six")
+            .style.visibility="visible"
+
+            document.getElementById("seven")
+            .style.visibility="hidden"
+
+            document.getElementById("eight")
+            .style.visibility="hidden"
+
+            document.getElementById("nine")
+            .style.visibility="hidden"
+        }
+
+        else if (pass.length<7){
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+
+            document.getElementById("pass")
+            .style.border= "2px solid #FF3D00"
+
+            document.getElementById("one")
+            .style.visibility="hidden"
+            
+            document.getElementById("two")
+            .style.visibility="hidden"
+
+            document.getElementById("three")
+            .style.visibility="hidden"
+
+            document.getElementById("four")
+            .style.visibility="hidden"
+
+            document.getElementById("five")
+            .style.visibility="hidden"
+
+            document.getElementById("six")
+            .style.visibility="hidden"
+
+            document.getElementById("seven")
+            .style.visibility="visible"
+
+            document.getElementById("eight")
+            .style.visibility="hidden"
+
+            document.getElementById("nine")
+            .style.visibility="hidden"
+        }
+        else if (pass.length>20){
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+      
+            document.getElementById("pass")
+            .style.border= "2px solid #FF3D00"
+
+            document.getElementById("one")
+            .style.visibility="hidden"
+            
+            document.getElementById("two")
+            .style.visibility="hidden"
+
+            document.getElementById("three")
+            .style.visibility="hidden"
+
+            document.getElementById("four")
+            .style.visibility="hidden"
+
+            document.getElementById("five")
+            .style.visibility="hidden"
+
+            document.getElementById("six")
+            .style.visibility="hidden"
+
+            document.getElementById("seven")
+            .style.visibility="hidden"
+
+            document.getElementById("eight")
+            .style.visibility="visible"
+
+            document.getElementById("nine")
+            .style.visibility="hidden"
+        }
+        else if (repass != pass){
+            document.getElementById("git")
+            .style.visibility="hidden"
+
+            document.getElementById("link")
+            .style.visibility="hidden"
+    
+            document.getElementById("pass")
+            .style.border= "2px solid #FF3D00"
+            document.getElementById("repass")
+            
+            .style.border= "2px solid Red"
+
+            document.getElementById("one")
+            .style.visibility="hidden"
+            
+            document.getElementById("two")
+            .style.visibility="hidden"
+
+            document.getElementById("three")
+            .style.visibility="hidden"
+
+            document.getElementById("four")
+            .style.visibility="hidden"
+
+            document.getElementById("five")
+            .style.visibility="hidden"
+
+            document.getElementById("six")
+            .style.visibility="hidden"
+
+            document.getElementById("seven")
+            .style.visibility="hidden"
+
+            document.getElementById("eight")
+            .style.visibility="hidden"
+
+            document.getElementById("nine")
+            .style.visibility="visible"
+        }
+        return false
+        
+    }
+
+    
+}
+
+    </script>
 </head>
 <body>
     
