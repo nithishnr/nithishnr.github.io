@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="login.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+::placeholder {
+    color: #212121;
+    opacity: 0.5;
+    font-size: 2rem;
+}
+
+
+
+body {
+    /*background-image: linear-gradient(to left, #004e9a , #000 );*/
+    background-color: #00E676;
+
+}
+
+body h1 {
+    color: #212121;
+    font-size: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    opacity: .5;
+    animation-name: heading;
+    animation-duration: 5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes heading{
+    0%{opacity: .7;}
+    50%{opacity: 1; }
+    100%{opacity: .7;}
+}
+
+
+button:focus {
+    outline: 0;
+
+}
+
+.allbox {
+
+    width: 20rem;
+    height: 3rem;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #212121;
+    color: #212121;
+    transition-duration: 0.25s;
+    
+}
+
+#uname {
+    position: absolute;
+    top: 15%;
+}
+
+#mail {
+
+    position: absolute;
+    top: 30%;
+}
+
+#pass {
+
+    position: absolute;
+    top: 45%;
+
+}
+
+#repass {
+
+    position: absolute;
+    top: 60%;
+}
+
+#submit {
+    position: absolute;
+    top: 75%;
+    right: 16%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-radius: 2rem;
+    transition-duration: 0.5s;
+    background-color: #212121;
+    color: #fff;
+}
+
+#submit:hover{
+    background-color: #FF5722;
+}
+
+label {
+    visibility: hidden;
+    color: #1E88E5;
+    font-size: 3rem;
+    position: absolute;
+    top: 55%;
+    left: 9%;
+    
+    
+}
+
+#git{
+    visibility: visible;
+}
+#link{
+    visibility: visible;
+    position: absolute;
+    top: 68%;
+    left: 9%;
+    
+}
+
+.allbox:hover {
+    border: 2px solid #fff;
+    width: 23rem;
+    height: 3rem;
+    position: relative;
+    right: 9%;
+    transition: .1s;
+    transition-timing-function: linear;
+    outline: none;
+    border-radius: 3rem;
+}
+.allbox:focus {
+    border: 2px solid #000;
+    width: 23rem;
+    height: 3rem;
+    position: relative;
+    right: 9%;
+    transition: .1s;
+    transition-timing-function: linear;
+    outline: none;
+    border-radius: 3rem;
+    
+
+}
+
+#passone{
+    position: absolute;
+    top: 46.9%;
+    right: 11%;
+    width: 25px;
+    height: 25px;
+    
+}
+#passtwo{
+    position: absolute;
+    top: 61.8%;
+    right: 11%;
+    width: 25px;
+    height: 25px;  
+}
+input[type="checkbox"]{
+    appearance: none;
+    background-color: #00E676;
+    outline:none;
+    border: 2px solid #2f2f2f;
+    border-radius: 30px;
+}
+input[type="checkbox"]:checked{
+    background-color:#2f2f2f;
+}
+a{
+    text-decoration: none;
+    color: #2f2f2f;
+
+}
+a:hover{
+    color: #1E88E5;
+}
+
+@media screen and (min-width: 1900px){
+    body h1{
+        position: absolute;
+        top: 18%;
+        left: 8%;
+        font-size: 8rem;
+    }
+    label {
+        font-size: 5rem; 
+    }
+    .allbox {
+        width: 35rem;
+        height: 6rem;
+        position: absolute;
+        right: 8%;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: transparent;
+        border: 3px solid #212121;
+        color: #212121;
+        transition-duration: 0.25s;
+    }
+    .allbox:hover {
+        
+        width: 36rem;
+        height: 6rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+    }
+    .allbox:focus {
+        border: 2px solid #000;
+        width: 36rem;
+        height: 6rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+        
+    
+    }
+    ::placeholder{
+        font-size: 2.5rem;
+    }
+    #passone{
+        position: absolute;
+        top: 47.3%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px;
+        
+    }
+    #passtwo{
+        position: absolute;
+        top: 62%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px; 
+    }
+    #submit {
+        position: absolute;
+        top: 75%;
+        right: 15%;
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: none;
+        border-radius: 3rem;
+
+    }
+
+}
+
+@media screen and (min-width: 1680px) and (max-width:1900px){
+    body h1{
+        position: absolute;
+        top: 15%;
+        left: 8%;
+        font-size: 6rem;
+    }
+    label {
+        font-size: 3rem; 
+    }
+    .allbox {
+        width: 35rem;
+        height: 6rem;
+        position: absolute;
+        right: 8%;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: transparent;
+        border: 3px solid #212121;
+        color: #212121;
+        transition-duration: 0.25s;
+    }
+    .allbox:hover {
+        
+        width: 36rem;
+        height: 6rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+    }
+    .allbox:focus {
+        border: 2px solid #000;
+        width: 36rem;
+        height: 6rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+        
+    
+    }
+    ::placeholder{
+        font-size: 2.5rem;
+    }
+    #passone{
+        position: absolute;
+        top: 47.3%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px;
+        
+    }
+    #passtwo{
+        position: absolute;
+        top: 62%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px; 
+    }
+    #submit {
+        position: absolute;
+        top: 75%;
+        right: 15%;
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: none;
+        border-radius: 3rem;
+
+    }
+
+}
+
+@media screen and (min-width: 1600px) and (max-width:1680px){
+    body h1{
+        position: absolute;
+        top: 15%;
+        left: 8%;
+        font-size: 6rem;
+    }
+    label {
+        font-size: 3rem; 
+    }
+    .allbox {
+        width: 30rem;
+        height: 5rem;
+        position: absolute;
+        right: 8%;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: transparent;
+        border: 3px solid #212121;
+        color: #212121;
+        transition-duration: 0.25s;
+    }
+    .allbox:hover {
+        
+        width: 32rem;
+        height: 6rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+    }
+    .allbox:focus {
+        border: 2px solid #000;
+        width: 32rem;
+        height: 6rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+        
+    
+    }
+    ::placeholder{
+        font-size: 2.5rem;
+    }
+    #passone{
+        position: absolute;
+        top: 47.3%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px;
+        
+    }
+    #passtwo{
+        position: absolute;
+        top: 62%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px; 
+    }
+    #submit {
+        position: absolute;
+        top: 75%;
+        right: 16.5%;
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: none;
+        border-radius: 3rem;
+
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) and (max-width:1600px){
+    body h1{
+        position: absolute;
+        top: 15%;
+        left: 6%;
+        font-size: 6rem;
+    }
+    label {
+        font-size: 3rem; 
+        position: absolute;
+        top: 55%;
+        left: 7%;
+        
+    }
+    #link{
+        position: absolute;
+        left: 7%;
+    }
+    .allbox {
+        width: 25rem;
+        height: 4rem;
+        position: absolute;
+        right: 8%;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: transparent;
+        border: 3px solid #212121;
+        color: #212121;
+        transition-duration: 0.25s;
+    }
+    .allbox:hover {
+        
+        width: 27rem;
+        height: 5rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+    }
+    .allbox:focus {
+        border: 2px solid #000;
+        width: 27rem;
+        height: 5rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+        
+    
+    }
+    ::placeholder{
+        font-size: 2rem;
+    }
+    #passone{
+        position: absolute;
+        top: 47.3%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px;
+        
+    }
+    #passtwo{
+        position: absolute;
+        top: 62%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px; 
+    }
+    #submit {
+        position: absolute;
+        top: 75%;
+        right: 15%;
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: none;
+        border-radius: 3rem;
+
+    }
+
+}
+@media screen and (min-width: 1360px) and (max-width:1440px){
+    body h1{
+        position: absolute;
+        top: 15%;
+        left: 6%;
+        font-size: 5rem;
+    }
+    label {
+        font-size: 3rem; 
+        position: absolute;
+        top: 55%;
+        left: 7%;
+        
+    }
+    #link{
+        position: absolute;
+        left: 7%;
+    }
+    .allbox {
+        width: 25rem;
+        height: 4rem;
+        position: absolute;
+        right: 8%;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: transparent;
+        border: 3px solid #212121;
+        color: #212121;
+        transition-duration: 0.25s;
+    }
+    .allbox:hover {
+        
+        width: 27rem;
+        height: 5rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+    }
+    .allbox:focus {
+        border: 2px solid #000;
+        width: 27rem;
+        height: 5rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+        
+    
+    }
+    ::placeholder{
+        font-size: 2rem;
+    }
+    #passone{
+        position: absolute;
+        top: 47.3%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px;
+        
+    }
+    #passtwo{
+        position: absolute;
+        top: 62%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px; 
+    }
+    #submit {
+        position: absolute;
+        top: 75%;
+        right: 15%;
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: none;
+        border-radius: 3rem;
+
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width:1360px){
+    body h1{
+        position: absolute;
+        top: 15%;
+        left: 6%;
+        font-size: 5rem;
+    }
+    label {
+        font-size: 3rem; 
+        position: absolute;
+        top: 55%;
+        left: 7%;
+        
+    }
+    #link{
+        position: absolute;
+        left: 7%;
+    }
+    .allbox {
+        width: 25rem;
+        height: 4rem;
+        position: absolute;
+        right: 8%;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: transparent;
+        border: 3px solid #212121;
+        color: #212121;
+        transition-duration: 0.25s;
+    }
+    .allbox:hover {
+        
+        width: 27rem;
+        height: 5rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+    }
+    .allbox:focus {
+        border: 2px solid #000;
+        width: 27rem;
+        height: 5rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+        
+    
+    }
+    ::placeholder{
+        font-size: 2rem;
+    }
+    #passone{
+        position: absolute;
+        top: 47.3%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px;
+        
+    }
+    #passtwo{
+        position: absolute;
+        top: 62%;
+        right: 9.5%;
+        width: 40px;
+        height: 40px; 
+    }
+    #submit {
+        position: absolute;
+        top: 75%;
+        right: 15%;
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: none;
+        border-radius: 3rem;
+
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width:1360px){
+    body h1{
+        position: absolute;
+        top: 8%;
+        left: 12%;
+        font-size: 5rem;
+        text-align: center;
+    }
+    label {
+        font-size: 3rem; 
+        position: absolute;
+        top: 65%;
+        left: 28%;
+        
+    }
+    #link{
+        position: absolute;
+        top: 73%;
+        left: 27%;
+    }
+    #uname{
+        position: absolute;
+        top: 25%;
+    }
+    #mail{
+        position: absolute;
+        top: 33%;
+    }
+    #pass{
+        position: absolute;
+        top: 41%;
+    }
+    #repass{
+        position: absolute;
+        top: 49%;
+    }
+    .allbox {
+
+        width: 30rem;
+        height: 4rem;
+        position: absolute;
+        right: 25%;
+        top: 30%;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid #212121;
+        color: #212121;
+        transition-duration: 0.25s;
+        
+    }
+    .allbox:hover {
+        
+        width: 27rem;
+        height: 5rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+    }
+    .allbox:focus {
+        border: 2px solid #000;
+        width: 27rem;
+        height: 5rem;
+        position: relative;
+        right: 8%;
+        border-radius: 3rem;
+        
+    
+    }
+    ::placeholder{
+        font-size: 2rem;
+    }
+    #passone{
+        position: absolute;
+        top: 42%;
+        right: 27.5%;
+        width: 40px;
+        height: 40px;
+        
+    }
+    #passtwo{
+        position: absolute;
+        top: 50%;
+        right: 27.5%;
+        width: 40px;
+        height: 40px; 
+    }
+    #submit {
+        position: absolute;
+        top: 57%;
+        left: 43%;
+        font-size: 2rem;
+        padding: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: none;
+        border-radius: 3rem;
+
+    }
+}
+    </style>
+    
+</head>
+<body>
+    
+    <form action="resume.html" autocomplete="off"  >
+        <h1 id="heading">CREATE A  <br> USER ACCOUNT!</h1>
+        
+        <input type="text" id="uname" placeholder="Username" class="allbox" >
+        
+        <input type="text" id="mail" placeholder="Mail" class="allbox">
+        
+        <input type="password" id="pass" placeholder="Password" class="allbox">
+        
+        <input type="password" id="repass" placeholder="Retype Password" class="allbox">
+        
+        <br><br>
+        <button type="submit" onclick="return validate()" id="submit">Submit</button>
+
+        
+    </form>
+    <input type="checkbox" onclick="myFunctionx()" id="passone">
+    <input type="checkbox" onclick="myFunctiony()" id="passtwo">
+
+    <label id="git" for="nbo"><a href="https://github.com/nithishnr" target="_blank">github.com/nithishnr</a></label>
+    <label id="link" for="nbo"><a href="https://www.linkedin.com/in/nithish-nr7-3b09821a6/" target="_blank">linkedin.com/nithishnr</a></label>
+
+    <label for="no" id="one">No values entered</label>
+    <label for="no" id="two">No username entered</label>
+    <label for="no" id="three">Username very short</label>
+    <label for="no" id="four">Username very long</label>
+    <label for="no" id="five">No mail entered</label>
+    <label for="no" id="six">No Password entered</label>
+    <label for="no" id="seven">Password very short</label>
+    <label for="no" id="eight">Password very long</label>
+    <label for="no" id="nine">Password's don't match</label>
+
+
+
+    
+</body>
+</html>
